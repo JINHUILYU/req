@@ -32,7 +32,7 @@ class LLM:
             "gpt4o": "https://api.chatanywhere.tech/v1",  # 转发接口
         }
         # Input your prompt here
-        self.prompt = ''''''
+        self.prompt = '''You are an assistant and you need to help a user to answer the question.'''
         self.history.append({"role": "system", "content": self.prompt})
 
     def query(self, sentence, context=True):
@@ -59,6 +59,6 @@ class LLM:
         # return jsonify({"result": processed_data})
 
 # test
-# llm = LLM()
-# question = "What is the capital of China?"
-# print(llm.query(question))
+llm = LLM()
+question = "What is the capital of China?"
+print(llm.query(question))

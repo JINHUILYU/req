@@ -34,7 +34,7 @@ def predict_sentiment(text, model, tokenizer, device, max_length=128):
 
 # 预测
 # test_text = "The movie was great and I really enjoyed the performances of the actors."
-model = torch.load(f"E:/Project/req/models/bert_classifier.pth", map_location="cuda" if torch.cuda.is_available() else "cpu")
+model = torch.load(f"E:/Project/req/models/best_bert_classifier.pth", map_location="cuda" if torch.cuda.is_available() else "cpu")
 bert_model_name = f'E:/Project/bert-base-uncased'
 tokenizer = BertTokenizer.from_pretrained(bert_model_name)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
