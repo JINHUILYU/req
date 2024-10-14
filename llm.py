@@ -6,6 +6,7 @@ from openai import OpenAI
 
 
 class LLM:
+    # Input your key here
     def __init__(self, model='gpt35', temperature=0.3, base_url='https://api.chatanywhere.tech/v1',
                  key=''):
         self.history = []
@@ -30,6 +31,7 @@ class LLM:
             # "gpt4o": "https://api.openai.com/v1",  # 官方接口
             "gpt4o": "https://api.chatanywhere.tech/v1",  # 转发接口
         }
+        # Input your prompt here
         self.prompt = ''''''
         self.history.append({"role": "system", "content": self.prompt})
 
@@ -55,3 +57,8 @@ class LLM:
         return processed_data
         # 与前端交互时返回json数据
         # return jsonify({"result": processed_data})
+
+# test
+# llm = LLM()
+# question = "What is the capital of China?"
+# print(llm.query(question))
