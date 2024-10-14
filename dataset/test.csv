@@ -1,0 +1,10 @@
+Sentence,Label
+"The System Synoptic Pressure Page shall display a temperature label in bold font, in accordance to the CUI section of LB1958, referenced ""as"" Temp_Press1_Units located below the Temp_Press1_Rdt readout.",FALSE
+"The System Power Monitoring Page shall display a voltage data field in large font, referenced ""as"" Volt_Monitor_Units located to the left of the Volt_Monitor_Rdt readout.",FALSE
+"The backup generator shall engage ""as"" per the operational guidelines specified in the LB1958 documentation.",TRUE
+"The primary cooling system shall operate ""as"" required when the ambient temperature exceeds 35°C, according to LB1958 specifications.",TRUE
+"The readout Hyd_Press3_Rdt shall display the unit ""as"" specified in the LB1958 CUI State for hydraulic pressure readouts.",FALSE
+"The error message Fuel_Error_Code_Rdt shall be shown ""as"" described in the LB1958 fault table for error handling logic.",FALSE
+"The safety protocol shall initiate a shutdown ""as"" soon as any critical system exceeds its operational thresholds.",TRUE
+"The display system shall show the alert ""as"" calculated in the LB1958 table titled ""Alert Logic"".",FALSE
+"The cooling system shall activate ""as"" specified in the LB1958 emergency response document during high-temperature scenarios.",TRUE

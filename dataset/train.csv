@@ -1,0 +1,52 @@
+﻿Sentence,Label
+"The System Synoptic Hydraulic Page shall display a units label data field in small font, in accordance to the CUI section of LB1958, referenced ""as"" Hyd_Press2_Units located to the right of the Hyd_Press2_Rdt readout.",FALSE
+"The System Synoptic Hydraulic Page shall display a units label data field in small font, in accordance to the CUI section of LB1958, referenced ""as"" Hyd_Press1_Units located to the right of the Hyd_Press1_Rdt readout.",FALSE
+"The readout Fuel_R_Tank_Temp_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_R_Tank_Temp_Rdt Logic"".",FALSE
+"The readout Fuel_R_Tank_Qty_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_R_Tank_Qty_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Temp_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_L_Tank_Temp_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Qty_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_L_Tank_Qty_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Used_Rdt shall display the Text Value in the LB1958 CUI State “as” calculated using the logic in the table titled ""Fuel_L_Tank_Used_Rdt Logic"".",FALSE
+The backup system shall activate “as” required when the primary system fails.,FALSE
+The data shall be archived “as” needed based on system usage and available storage capacity.,FALSE
+The emergency alarm shall trigger “as” instructed by the safety protocol during a fire hazard.,FALSE
+"The system shall activate the backup power source ""as"" the main power supply fails.",TRUE
+"The alarm shall sound ""as"" the temperature exceeds the predefined threshold.",TRUE
+"The display brightness shall automatically adjust ""as"" the ambient light changes.",TRUE
+"The system shall lock the user account ""as"" multiple failed login attempts are detected.",TRUE
+"The vehicle shall reduce speed ""as"" it approaches a designated stop point.",TRUE
+"Circuit diagram flow lines that intersect each other shall be separated ""by"" having one segment cross over the top of the other in accordance with the CUI section of LB1958, if the segments are not physically connected at that point in the circuit.",FALSE
+"The System Synoptic Pages shall reference the following aircraft subsystem symbols ""as"" declared in the Global Picture table from the A661 DSDF:
+1. Aircraft Fuel Tank Wireframe",FALSE
+"The System Synoptic HF display window personality definition shall be configured to occupy the extents of a MFW half screen layer on either the left or right side of DU2, DU3 or DU4 ""as"" specified in the A661 MSRS LB1883.",FALSE
+"Upon a recoverable internal execution failure, the System Synoptic HF shall record the fault immediately in NVM, and restore normal operations ""without"" restarting the partition.",FALSE
+"The vxMain function shall set vxRegisterOrLink ""as"" sslRegisterOrLink to store SSL's registration routine.",FALSE
+"The applicationStepSyn function shall set layersActive ""as"" AnyLayerIsActive in output of SynopticMenu model with current IDU to record active state of output.",FALSE
+"In the loop of A661_RTC_Loop, SynopticMenu_UA_Main_receive shall set the input flag libA661_NOTE_LAYER_IS_DATA ""as"" true to notify reinitialize layer data structure, when matching all following conditions:
+1. cond_A661_RTC_Type is equal to A661_NOTIFY_LAYER_EVENT.
+2. cond_Widget_Ident is equal to A661_NOTE_LAYER_IS_DATA.",FALSE
+"In the loop of A661_RTC_Loop, SynopticMenu_UA_Main_receive shall set the input flag libA661_NOTE_LAYER_IS_ACTIVE ""as"" true to notify layer is active structure, when matching all following conditions:
+1. cond_A661_RTC_Type is equal to A661_NOTIFY_LAYER_EVENT.
+2. cond_Widget_Ident is equal to A661_NOTE_LAYER_IS_ACTIVE.",FALSE
+"The a661_com_layer_81 function shall call function a661_com_csp_widget_ToggleButton to pack parameter message for HYD button ""when"" the EntryValidation or ToggleState of HYD button in layer 81 is updated.",TRUE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR ""to"" raise the error to the partition level and exit the loop when:
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",TRUE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR to raise the error ""to"" the partition level and exit the loop when:
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",FALSE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR ""to"" raise the error to the partition level and exit the loop ""when"":
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",TRUE
+"The a661_com_layer_1 function shall call function a661_msg_cmd_header to pack A661 command message header ""when"" packing the A661 block message of layer 1.",TRUE
+"The system shall automatically shut down ""after"" the battery reaches a critically low level.",TRUE
+"The device shall enter sleep mode ""after"" 15 minutes of user inactivity.",TRUE
+"The system shall trigger an alert ""after"" the network connection is lost for more than 5 seconds.",TRUE
+"The data backup process shall begin ""after"" the system completes the data synchronization.",TRUE
+"The software shall prompt the user to save changes ""after"" any modification is made to the document.",TRUE
+"The application shall display a confirmation message ""after"" 3 seconds if the operation is completed successfully.",FALSE
+"The vehicle's engine shall automatically restart ""after"" 3 seconds if it stalls during operation.",FALSE
+"The vehicle's engine shall automatically restart after 3 seconds ""if"" it stalls during operation.",TRUE
+"The application shall display a confirmation message ""after"" 3 seconds ""if"" the operation is completed successfully.",TRUE
