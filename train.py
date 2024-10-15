@@ -127,8 +127,11 @@ for epoch in range(num_epochs):
     accuracy, report = evaluate(model, val_dataloader, device)
     if accuracy > best_acc:
         best_acc = accuracy
-        torch.save(model, f"E:/Project/req/models/best_bert_classifier.pth")
+        # torch.save(model, f"E:/Project/req/models/best_bert_large_classifier.pth")
+        torch.save(model.state_dict(), r"models/best_bert_base_classifier.pth")
     print(f"Validation Accuracy: {accuracy:.4f}")
     print(report)
 # 保存模型
-torch.save(model, f"E:/Project/req/models/bert_classifier.pth")
+# torch.save(model, f"E:/Project/req/models/bert_large_classifier.pth")
+model_path = r"models/bert_base_classifier.pth"
+torch.save(model.state_dict(), model_path)

@@ -30,14 +30,39 @@ def predict_sentiment(text, model, tokenizer, device, max_length=128):
     return preds.item()
 
 
+def predict(text):
+    """
+    :param text: str
+    :return: label: int
+    """
+    bert_model_name = r'E:/Project/bert-base-uncased'
+    # Initialize the model first
+    model = BERTClassifier(bert_model_name, 2)
+    model_path = r"models/bert_base_classifier.pth"
+    # Load state dict (weights)
+    model.load_state_dict(torch.load(model_path, map_location='cpu'))
+    # model = torch.load(model_path, map_location='cpu')
+    # bert_model_name = os.path.join(basedir, r'models\bert-base-uncased')
+    tokenizer = BertTokenizer.from_pretrained(bert_model_name)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    sentiment = predict_sentiment(text, model, tokenizer, device)
+    return sentiment
+
+
 texts = [
     '''The system shall trigger an alert after the network connection is lost for more than 5 seconds "if" the network connection is not restored within 10 seconds.''',
     '''The readout Fuel_L_Tank_Qty_Rdt shall display the Text Value in the LB1958 CUI State "as" calculated using the logic in the table titled "Fuel_L_Tank_Qty_Rdt Logic".''']
-model = torch.load(f"E:/Project/req/models/bert_classifier.pth",
-                   map_location="cuda" if torch.cuda.is_available() else "cpu")
-bert_model_name = f'E:/Project/bert-base-uncased'
-tokenizer = BertTokenizer.from_pretrained(bert_model_name)
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# model = torch.load(f"E:/Project/req/models/bert_classifier.pth",
+#                    map_location="cuda" if torch.cuda.is_available() else "cpu")
+# bert_model_name = f'E:/Project/bert-base-uncased'
+# tokenizer = BertTokenizer.from_pretrained(bert_model_name)
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 for text in texts:
-    sentiment = predict_sentiment(text, model, tokenizer, device)
+    # sentiment = predict_sentiment(text, model, tokenizer, device)
+    sentiment = predict(text)
     print(f"text: {text} label: {sentiment}")
+
+# 调用方式为
+# predict(text)
+# text为需要预测的文本
+# 返回值为0或1，0表示False，1表示True
