@@ -1,0 +1,144 @@
+﻿Sentence,Label
+"The System Synoptic Hydraulic Page shall display a units label data field in small font, in accordance to the CUI section of LB1958, referenced ""as"" Hyd_Press2_Units located to the right of the Hyd_Press2_Rdt readout.",FALSE
+"The System Synoptic Hydraulic Page shall display a units label data field in small font, in accordance to the CUI section of LB1958, referenced ""as"" Hyd_Press1_Units located to the right of the Hyd_Press1_Rdt readout.",FALSE
+"The readout Fuel_R_Tank_Temp_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_R_Tank_Temp_Rdt Logic"".",FALSE
+"The readout Fuel_R_Tank_Qty_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_R_Tank_Qty_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Temp_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_L_Tank_Temp_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Qty_Rdt shall display the Text Value in the LB1958 CUI State ""as"" calculated using the logic in the table titled ""Fuel_L_Tank_Qty_Rdt Logic"".",FALSE
+"The readout Fuel_L_Tank_Used_Rdt shall display the Text Value in the LB1958 CUI State “as” calculated using the logic in the table titled ""Fuel_L_Tank_Used_Rdt Logic"".",FALSE
+The backup system shall activate “as” required when the primary system fails.,FALSE
+The data shall be archived “as” needed based on system usage and available storage capacity.,FALSE
+The emergency alarm shall trigger “as” instructed by the safety protocol during a fire hazard.,FALSE
+"The system shall activate the backup power source ""as"" the main power supply fails.",TRUE
+"The alarm shall sound ""as"" the temperature exceeds the predefined threshold.",TRUE
+"The display brightness shall automatically adjust ""as"" the ambient light changes.",TRUE
+"The system shall lock the user account ""as"" multiple failed login attempts are detected.",TRUE
+"The vehicle shall reduce speed ""as"" it approaches a designated stop point.",TRUE
+"Circuit diagram flow lines that intersect each other shall be separated ""by"" having one segment cross over the top of the other in accordance with the CUI section of LB1958, if the segments are not physically connected at that point in the circuit.",FALSE
+"The System Synoptic Pages shall reference the following aircraft subsystem symbols ""as"" declared in the Global Picture table from the A661 DSDF:
+1. Aircraft Fuel Tank Wireframe",FALSE
+"The System Synoptic HF display window personality definition shall be configured to occupy the extents of a MFW half screen layer on either the left or right side of DU2, DU3 or DU4 ""as"" specified in the A661 MSRS LB1883.",FALSE
+"Upon a recoverable internal execution failure, the System Synoptic HF shall record the fault immediately in NVM, and restore normal operations ""without"" restarting the partition.",FALSE
+"The vxMain function shall set vxRegisterOrLink ""as"" sslRegisterOrLink to store SSL's registration routine.",FALSE
+"The applicationStepSyn function shall set layersActive ""as"" AnyLayerIsActive in output of SynopticMenu model with current IDU to record active state of output.",FALSE
+"In the loop of A661_RTC_Loop, SynopticMenu_UA_Main_receive shall set the input flag libA661_NOTE_LAYER_IS_DATA ""as"" true to notify reinitialize layer data structure, when matching all following conditions:
+1. cond_A661_RTC_Type is equal to A661_NOTIFY_LAYER_EVENT.
+2. cond_Widget_Ident is equal to A661_NOTE_LAYER_IS_DATA.",FALSE
+"In the loop of A661_RTC_Loop, SynopticMenu_UA_Main_receive shall set the input flag libA661_NOTE_LAYER_IS_ACTIVE ""as"" true to notify layer is active structure, when matching all following conditions:
+1. cond_A661_RTC_Type is equal to A661_NOTIFY_LAYER_EVENT.
+2. cond_Widget_Ident is equal to A661_NOTE_LAYER_IS_ACTIVE.",FALSE
+"The a661_com_layer_81 function shall call function a661_com_csp_widget_ToggleButton to pack parameter message for HYD button ""when"" the EntryValidation or ToggleState of HYD button in layer 81 is updated.",TRUE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR ""to"" raise the error to the partition level and exit the loop when:
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",TRUE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR to raise the error ""to"" the partition level and exit the loop when:
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",FALSE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR ""to"" raise the error to the partition level and exit the loop ""when"":
+1. The returnCode is equal to NO_ERROR.
+- AND -
+2. The ERROR_CODE of errorStatus is equal to HME_STACK_OVERFLOW.",TRUE
+"The a661_com_layer_1 function shall call function a661_msg_cmd_header to pack A661 command message header ""when"" packing the A661 block message of layer 1.",TRUE
+"The system shall automatically shut down ""after"" the battery reaches a critically low level.",TRUE
+"The device shall enter sleep mode ""after"" 15 minutes of user inactivity.",TRUE
+"The system shall trigger an alert ""after"" the network connection is lost for more than 5 seconds.",TRUE
+"The data backup process shall begin ""after"" the system completes the data synchronization.",TRUE
+"The software shall prompt the user to save changes ""after"" any modification is made to the document.",TRUE
+"The application shall display a confirmation message ""after"" 3 seconds if the operation is completed successfully.",FALSE
+"The vehicle's engine shall automatically restart ""after"" 3 seconds if it stalls during operation.",FALSE
+"The vehicle's engine shall automatically restart after 3 seconds ""if"" it stalls during operation.",TRUE
+"The application shall display a confirmation message ""after"" 3 seconds ""if"" the operation is completed successfully.",TRUE
+"The InitApp function shall call function scoeAmioEnable ""to"" enable AMIO output.",TRUE
+"The InitApp function shall call function CREATE_ERROR_HANDLER ""to"" create an error handler process.",TRUE
+"The InitApp function shall call function TLA_CREATE_PORTS ""to"" create A661/A664 ports.",TRUE
+"The InitApp function shall call function CREATE_PROCESS ""to"" create main task applicationProcess.",TRUE
+"The InitApp function shall call function START ""to"" start main task applicationProcess.",TRUE
+"The InitApp function shall call function SET_PARTITION_MODE ""to"" enter normal partition mode.",TRUE
+"The applicationInitPeerChgOvr function shall call function SynopticPeerChangeover_reset_SynopticPeerChangeover ""to"" initialize peerChangeOverOutC in the PCO model.",TRUE
+"The applicationInitSyn function shall call function SynopticMenu_Main_reset_SynopticMenu five times ""to"" initialize outC of SynopticMenu model.",TRUE
+"The applicationInit function shall call function ioen_initializeIom ""to"" initialize the IOM buffer.",TRUE
+"The applicationInit function shall call function a661ua_reset ""to"" initialize the A661UALIB data.",TRUE
+"The applicationInit function shall call function applicationInitPeerChgOvr ""to"" initialize the PCO output data of SYNMenu model.",TRUE
+"The myErrorHandler function shall call function RAISE_APPLICATION_ERROR ""to"" raise the error to the partition level and exit the loop when returnCode is not equal ""to"" NO_ACTION or NO_ERROR.",TRUE
+"The applicationProcess function shall call function TLA_INIT ""to"" initialize IO buffer and A661 resources.",TRUE
+"The applicationProcess function shall call function PERIODIC_WAIT ""to"" wait next period expiration.",TRUE
+"The SystemController function shall call the resetHardware function ""to"" reset the system after a critical error. ",TRUE
+"The updateDisplay function shall adjust the brightness settings ""to"" optimize visibility in low light conditions. ",TRUE
+"The user authentication module shall invoke the validateCredentials function ""to"" verify the user's identity before granting access. ",TRUE
+"The system shall log all error messages ""to"" provide detailed debugging information. ",TRUE
+"The network module shall retry the connection ""to"" re-establish communication with the server. ",TRUE
+"The saveData function shall call commitTransaction ""to"" ensure data is written to the database. ",TRUE
+"The safety alert system shall trigger ""when"" the temperature exceeds 90°C. ",TRUE
+"The system shall lock the doors ""when"" the speed exceeds 10 km/h. ",TRUE
+"The device shall enter sleep mode ""when"" the user is inactive for 10 minutes. ",TRUE
+"The backup system shall activate ""when"" the main system detects a failure. ",TRUE
+"The light sensor shall adjust screen brightness ""when"" ambient light changes significantly. ",TRUE
+"The application shall prompt the user to save changes ""when"" closing the document. ",TRUE
+"The system shall perform a health check ""after"" every reboot. ",TRUE
+"The backup process shall begin ""after"" the file transfer completes. ",TRUE
+"The alarm shall reset ""after"" 10 seconds if no further issues are detected. ",TRUE
+"The software shall prompt the user ""after"" an update is successfully installed. ",TRUE
+"The system shall display a confirmation message ""after"" completing the configuration setup. ",TRUE
+"The cooling fan shall turn on ""after"" the processor reaches 75°C.",TRUE
+"The alert shall trigger ""if"" the battery level drops below 20%. ",TRUE
+"The system shall switch to backup power ""if"" the main power supply fails. ",TRUE
+"The software shall prompt the user to save ""if"" any unsaved changes are detected. ",TRUE
+"The network shall retry connection ""if"" a packet loss exceeds the threshold. ",TRUE
+"The device shall automatically shut down ""if"" overheating is detected. ",TRUE
+"The vehicle shall reduce speed ""if"" it approaches a pedestrian crossing.",TRUE
+"The device shall ensure secure communication ""by"" encrypting all data transmissions. ",TRUE
+"The backup process shall minimize downtime ""by"" running in the background. ",TRUE
+"The system shall prevent unauthorized access ""by"" implementing multi-factor authentication. ",TRUE
+"The software shall optimize performance ""by"" reducing unnecessary background processes. ",TRUE
+"The device shall save power ""by"" dimming the screen when not in use. ",TRUE
+"The car shall accelerate ""at"" a rate of 5 m/s².",FALSE
+"The system shall save the log file ""at"" the end of each hour.",FALSE
+"The temperature sensor shall report values ""every"" 10 seconds.",FALSE
+"The machine shall run ""for"" 3 hours without interruption.",FALSE
+"The drone shall land ""at"" the specified GPS coordinates.",FALSE
+"The engine shall maintain a speed of 2000 RPM ""while"" in idle mode.",FALSE
+"The lights shall dim ""with"" increasing ambient light.",FALSE
+"The system shall log data ""in"" 5-minute intervals.",FALSE
+"The battery shall charge ""to"" 80% in 30 minutes.",FALSE
+"The robot shall move ""at"" a speed of 1 meter per second.",FALSE
+"The fan shall stop ""after"" running for 5 minutes.",FALSE
+"The pump shall operate ""at"" full capacity for 10 minutes.",FALSE
+"The display shall refresh ""every"" 2 seconds.",FALSE
+"The backup shall start ""after"" 10 minutes of inactivity.",FALSE
+"The sensor shall activate ""at"" the specified time.",FALSE
+"The motor shall run ""for"" 5 hours continuously.",FALSE
+"The cooling system shall activate ""when"" the temperature reaches 75°C.",FALSE
+"The device shall enter sleep mode ""after"" 15 minutes of inactivity.",FALSE
+"The lights shall turn off ""after"" midnight.",FALSE
+"The application shall save changes ""every"" 5 minutes.",FALSE
+"The machine shall be serviced ""every"" 6 months.",FALSE
+"The system shall update the software ""at"" 2 AM daily.",FALSE
+"The car shall maintain a speed of 100 km/h ""on"" the highway.",FALSE
+"The signal shall be sent ""after"" 10 seconds of processing.",FALSE
+"The report shall be generated ""at"" the end of the day.",FALSE
+"The printer shall complete the job ""within"" 30 seconds.",FALSE
+"The lights shall stay on ""for"" 2 hours.",FALSE
+"The system shall store logs ""in"" 1-hour intervals.",FALSE
+"The drone shall hover ""at"" a height of 10 meters.",FALSE
+"The vehicle shall travel ""at"" 60 km/h until it reaches the destination.",FALSE
+"The data shall be saved ""every"" 10 minutes.",FALSE
+"The water pump shall operate ""at"" full speed ""until"" the tank is empty.",FALSE
+"The camera shall capture images ""at"" regular intervals.",FALSE
+"The air conditioner shall run ""at"" a low speed ""until"" the temperature drops to 25°C.",FALSE
+"The heater shall remain on ""for"" 30 minutes after the system powers off.",FALSE
+"The system shall update its configuration ""at"" startup.",FALSE
+"The device shall record temperature data ""every"" 10 minutes.",FALSE
+"The alarm shall sound ""for"" 15 seconds when triggered.",FALSE
+"The engine shall idle ""at"" a constant RPM until the driver presses the accelerator.",FALSE
+"The system shall switch to standby mode ""after"" 5 minutes of no activity.",FALSE
+"The display shall automatically adjust brightness ""based on"" ambient light.",FALSE
+"The software shall perform a backup ""at"" midnight.",FALSE
+"The fan shall run ""for"" 10 minutes after the system shuts down.",FALSE
+"The conveyor belt shall move ""at"" a speed of 2 meters per second.",FALSE
+"The coffee machine shall brew ""for"" 3 minutes before turning off.",FALSE
+"The device shall enter low-power mode ""after"" 30 seconds of no user input.",FALSE
+"The lights shall blink ""every"" 2 seconds.",FALSE
+"The sensor shall monitor pressure ""at"" regular intervals.",FALSE
+"The motor shall run ""at"" half speed for the first 10 minutes of operation.",FALSE

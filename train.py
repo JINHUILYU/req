@@ -1,4 +1,4 @@
-import torch
+import torch, time
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from transformers import BertTokenizer, BertModel, AdamW, get_linear_schedule_with_warmup
@@ -22,7 +22,7 @@ def load_data(data_file):
     return texts, labels
 
 
-data_file = "dataset/train.csv"  # 训练数据集
+data_file = "dataset/rawdata.csv"  # 训练数据集
 texts, labels = load_data(data_file)
 print(f"Number of samples: {len(texts)}")
 
@@ -119,10 +119,16 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 total_steps = len(train_dataloader) * num_epochs
 scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
 best_acc = 0.0
+# 获取当前时间
+now = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
+# 创建log文件
+log_file = open(f"log/{now}.txt", "w")
 # 训练模型
 print("Start training models.")
+log_file.write("Start training models.\n")
 for epoch in range(num_epochs):
     print(f"Epoch {epoch + 1}/{num_epochs}")
+    log_file.write(f"Epoch {epoch + 1}/{num_epochs}\n")
     train(model, train_dataloader, optimizer, scheduler, device)
     accuracy, report = evaluate(model, val_dataloader, device)
     if accuracy > best_acc:
@@ -130,7 +136,9 @@ for epoch in range(num_epochs):
         # torch.save(model, f"E:/Project/req/models/best_bert_large_classifier.pth")
         torch.save(model.state_dict(), r"models/best_bert_base_classifier.pth")
     print(f"Validation Accuracy: {accuracy:.4f}")
+    log_file.write(f"Validation Accuracy: {accuracy:.4f}\n")
     print(report)
+    log_file.write(report)
 # 保存模型
 # torch.save(model, f"E:/Project/req/models/bert_large_classifier.pth")
 model_path = r"models/bert_base_classifier.pth"
